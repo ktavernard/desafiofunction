@@ -1,9 +1,8 @@
 function calcularNivel(vitorias, derrotas) {
-    // Cálculo do saldo de vitórias
+   
     let saldo = vitorias - derrotas;
     let nivel;
 
-    // Determinando o nível com base na quantidade de vitórias
     if (vitorias < 10) {
         nivel = "Ferro";
     } else if (vitorias >= 11 && vitorias <= 20) {
@@ -20,7 +19,7 @@ function calcularNivel(vitorias, derrotas) {
         nivel = "Imortal";
     }
 
-    // Exibindo o resultado final
+    // Resultado final
     console.log(`O Herói tem saldo de ${saldo} e está no nível de ${nivel}.`);
 }
 
